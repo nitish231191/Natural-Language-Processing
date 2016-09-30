@@ -1,0 +1,96 @@
+Perceptron
+
+Code
+
+The feature list is the entire dictionary of length 47814 taken from Bayes theorem
+Then we initialize two lists one fro weights and other for average weights and the same thing is done for
+bias
+
+We takes pos tagset as representing a positive number
+and the neg tagset as respresenting negative number
+
+the inital Phi in the algorithm is filled by calculating the intersection of the vocabulary and the total words
+in the document
+
+To maintain a one to one correspondence between the indices of phi and the wordlist we make the length of the wordlist
+equal to the length of the dictionary
+
+
+Then the algorithm is trained and we get the avgweight and avergebias which is then used for prediction
+
+
+Results
+
+
+
+ for 10 iterations
+
+[INFO]	Fold 0 Accuracy: 0.645000
+[INFO]	Fold 1 Accuracy: 0.610000
+[INFO]	Fold 2 Accuracy: 0.670000
+[INFO]	Fold 3 Accuracy: 0.660000
+[INFO]	Fold 4 Accuracy: 0.625000
+[INFO]	Fold 5 Accuracy: 0.690000
+[INFO]	Fold 6 Accuracy: 0.705000
+[INFO]	Fold 7 Accuracy: 0.635000
+[INFO]	Fold 8 Accuracy: 0.675000
+[INFO]	Fold 9 Accuracy: 0.655000
+[INFO]	Accuracy: 0.657000
+
+for 1000 iterations
+
+Accuracy approaches 85%
+
+The algorithm becomes extremely slow for 1000 iterations
+
+
+Naive Bayes
+
+Algorithm is simple enough , we basically do a count
+
+Results
+[INFO]	Fold 0 Accuracy: 0.770000
+[INFO]	Fold 1 Accuracy: 0.850000
+[INFO]	Fold 2 Accuracy: 0.820000
+[INFO]	Fold 3 Accuracy: 0.805000
+[INFO]	Fold 4 Accuracy: 0.820000
+[INFO]	Fold 5 Accuracy: 0.815000
+[INFO]	Fold 6 Accuracy: 0.820000
+[INFO]	Fold 7 Accuracy: 0.820000
+[INFO]	Fold 8 Accuracy: 0.765000
+[INFO]	Fold 9 Accuracy: 0.840000
+[INFO]	Accuracy: 0.812500
+
+
+Binomial Naive Bayes:
+
+We basically ignorance of characters in a single document and take the occurence of such document to be 1
+
+Result and Analysis
+[INFO]	Fold 0 Accuracy: 0.670000
+[INFO]	Fold 1 Accuracy: 0.675000
+[INFO]	Fold 2 Accuracy: 0.725000
+[INFO]	Fold 3 Accuracy: 0.695000
+[INFO]	Fold 4 Accuracy: 0.690000
+[INFO]	Fold 5 Accuracy: 0.725000
+[INFO]	Fold 6 Accuracy: 0.740000
+[INFO]	Fold 7 Accuracy: 0.710000
+[INFO]	Fold 8 Accuracy: 0.700000
+[INFO]	Fold 9 Accuracy: 0.725000
+[INFO]	Accuracy: 0.705500
+
+Naive Baiyes with stop words removed
+
+Result and Analysis
+
+[INFO]	Fold 0 Accuracy: 0.785000
+[INFO]	Fold 1 Accuracy: 0.825000
+[INFO]	Fold 2 Accuracy: 0.810000
+[INFO]	Fold 3 Accuracy: 0.815000
+[INFO]	Fold 4 Accuracy: 0.810000
+[INFO]	Fold 5 Accuracy: 0.810000
+[INFO]	Fold 6 Accuracy: 0.820000
+[INFO]	Fold 7 Accuracy: 0.825000
+[INFO]	Fold 8 Accuracy: 0.760000
+[INFO]	Fold 9 Accuracy: 0.825000
+[INFO]	Accuracy: 0.808500
