@@ -1,0 +1,13 @@
+Nitish Chandra
+UIN 825008967
+
+
+Run the code
+1 .python SpamLord.py data_dev/dev data_dev/devGOLD
+
+2.Analysis and Results
+    tp =56
+    fp=0
+    fn =3
+
+3. The program does not cover the occurence of where in email address
